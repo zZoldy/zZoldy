@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>R&S Intermediações</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navegação -->
+  <nav class="nav" aria-label="Principal">
+    <a href="#hero" class="logo" aria-label="Ir para o início">
+      <img src="assets/logo.png" alt="R&S Intermediações" />
+    </a>
+
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#simulador">Simular</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Balões de Atalho para Ofertas -->
+  <div class="balloon-nav" aria-label="Atalhos para ofertas">
+    <a class="balloon" href="#card-imovel" aria-label="Ir para oferta de Imóvel">
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+      <span>Imóvel</span>
+    </a>
+    <a class="balloon" href="#card-veiculo" aria-label="Ir para oferta de Veículo">
+      <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+      <span>Veículo</span>
+    </a>
+    <a class="balloon" href="#card-caminhao" aria-label="Ir para oferta de Caminhão">
+      <i class="fa-solid fa-truck-moving" aria-hidden="true"></i>
+      <span>Caminhão</span>
+    </a>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Realize seus sonhos com planejamento inteligente</h1>
+      <p>
+        A R&S Intermediações oferece soluções transparentes e seguras para você
+        conquistar seu imóvel ou veículo com tranquilidade.
+      </p>
+      <a class="btn btn-primary" href="https://wa.me/5561986644528" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+        Simular no WhatsApp
+      </a>
+    </div>
+
+    <div class="hero-image" aria-hidden="true">
+      <img src="assets/hero.png" alt="Destaque" />
+    </div>
+
+  </section>
+
+  <!-- Ofertas (slider de produtos) -->
+  <section class="promo-cards">
+    <article id="card-imovel" class="promo-card" data-media-prefix="casa">
+      <div class="promo-text">
+        <p class="promo-kicker">Seu novo imóvel com 50% de redução na parcela até a contemplação, sem juros e sem
+          entrada!</p>
+        <h3>A MELHOR OFERTA DO ANO!</h3>
+        <p class="promo-sub">Parcelas a partir de R$ 270,00</p>
+        <a class="btn btn-light" href="#contato">Solicite uma proposta</a>
+      </div>
+      <div class="promo-media" aria-hidden="true">
+        <div class="media-slider" role="region" aria-label="Galeria - Imóvel">
+          <button class="media-nav media-prev" aria-label="Anterior">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="media-track" aria-live="polite">
+            <div class="media-slide active">
+              <img src="assets/promo_casa.png" alt="Imóvel" />
+            </div>
+            <!-- Adicione mais imagens aqui, se houver -->
+          </div>
+          <button class="media-nav media-next" aria-label="Próximo">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+          <div class="media-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="card-veiculo" class="promo-card reverse" data-media-prefix="carro">
+      <div class="promo-text">
+        <p class="promo-kicker">Seu novo veículo com 35% de redução na parcela até a contemplação, sem juros e sem
+          entrada!</p>
+        <h3>A MELHOR OFERTA DO ANO!</h3>
+        <p class="promo-sub">Parcelas a partir de R$ 252,00</p>
+        <a class="btn btn-light" href="#contato">Solicite uma proposta</a>
+      </div>
+      <div class="promo-media" aria-hidden="true">
+        <div class="media-slider" role="region" aria-label="Galeria - Veículo">
+          <button class="media-nav media-prev" aria-label="Anterior">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="media-track" aria-live="polite">
+            <div class="media-slide active">
+              <img src="assets/promo_carro.png" alt="Veículo" />
+            </div>
+            <!-- Adicione mais imagens aqui, se houver -->
+          </div>
+          <button class="media-nav media-next" aria-label="Próximo">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+          <div class="media-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="card-caminhao" class="promo-card" data-media-prefix="caminhao">
+      <div class="promo-text">
+        <p class="promo-kicker">Condições especiais para caminhões: planejamento inteligente para o seu negócio.</p>
+        <h3>A MELHOR OFERTA DO ANO!</h3>
+        <p class="promo-sub">Parcelas competitivas para sua frota</p>
+        <a class="btn btn-light" href="#contato">Solicite uma proposta</a>
+      </div>
+      <div class="promo-media" aria-hidden="true">
+        <div class="media-slider" role="region" aria-label="Galeria - Caminhão">
+          <button class="media-nav media-prev" aria-label="Anterior">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="media-track" aria-live="polite">
+            <div class="media-slide active">
+              <img src="assets/promo_caminhao.png" alt="Caminhão" />
+            </div>
+            <!-- Adicione mais imagens aqui, se houver -->
+          </div>
+          <button class="media-nav media-next" aria-label="Próximo">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+          <div class="media-dots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Sobre nós -->
+  <section id="sobre" class="about overlay-panel section" aria-hidden="true" role="dialog" aria-label="Sobre nós">
+    <div class="overlay-box">
+      <button class="overlay-close" data-overlay-close aria-label="Fechar">×</button>
+      <div class="about-text">
+        <h2>Sobre nós</h2>
+        <p>
+          A <strong>R&S Intermediações</strong> nasceu com o propósito de ajudar pessoas
+          e empresas a realizarem seus objetivos por meio de planejamento,
+          transparência e segurança.
+        </p>
+        <p>
+          Atuamos com foco em intermediação de soluções para aquisição de imóveis
+          e veículos, prezando pela clareza nas informações, atendimento
+          humanizado e acompanhamento em todas as etapas.
+        </p>
+        <p>
+          Mais do que oferecer serviços, buscamos construir relações de confiança
+          duradouras, apoiando cada cliente na realização de seus sonhos.
+        </p>
+
+        <div class="features">
+          <article class="feature">
+            <i class="fas fa-handshake" aria-hidden="true"></i>
+            <h3>Confiança</h3>
+            <p>Atendimento transparente e humanizado.</p>
+          </article>
+          <article class="feature">
+            <i class="fas fa-user-shield" aria-hidden="true"></i>
+            <h3>Segurança</h3>
+            <p>Processos claros e regulamentados.</p>
+          </article>
+          <article class="feature">
+            <i class="fas fa-bullseye" aria-hidden="true"></i>
+            <h3>Foco no cliente</h3>
+            <p>Planos adaptados às suas necessidades.</p>
+          </article>
+          <article class="feature">
+            <i class="fas fa-people-group" aria-hidden="true"></i>
+            <h3>Apoio completo</h3>
+            <p>Acompanhamento em todas as etapas.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="benefits section">
+    <div class="overlay-box">
+      <button class="overlay-close" data-overlay-close aria-label="Fechar">×</button>
+      <h2>Benefícios e Diferenciais</h2>
+      <p class="subtitle">
+        Soluções sob medida para você conquistar seu imóvel ou veículo com
+        segurança, transparência e planejamento.
+      </p>
+
+      <div class="benefit-grid">
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-sliders"></i></div>
+          <h3>Planos Personalizados</h3>
+          <p>Escolha valor e prazo de acordo com sua estratégia.</p>
+          <span class="benefit-underline"></span>
+        </article>
+
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-percent"></i></div>
+          <h3>Custo Previsível</h3>
+          <p>Previsibilidade de parcelas e total transparência.</p>
+          <span class="benefit-underline"></span>
+        </article>
+
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-user-group"></i></div>
+          <h3>Atendimento Humanizado</h3>
+          <p>Equipe para tirar dúvidas em cada etapa.</p>
+          <span class="benefit-underline"></span>
+        </article>
+
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Credibilidade</h3>
+          <p>Parcerias com instituições reconhecidas e reguladas.</p>
+          <span class="benefit-underline"></span>
+        </article>
+
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <h3>Flexibilidade</h3>
+          <p>Opções para antecipar, ajustar e planejar com liberdade.</p>
+          <span class="benefit-underline"></span>
+        </article>
+
+        <article class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h3>Transparência</h3>
+          <p>Regras claras, contratos simples e acompanhamento.</p>
+          <span class="benefit-underline"></span>
+        </article>
+      </div>
+
+      <div class="benefit-split">
+        <div>
+          <span class="split-line"></span>
+          <h3>Planejamento Inteligente</h3>
+          <p>
+            Adquirir um imóvel ou veículo com planejamento é a forma mais
+            segura de construir patrimônio, com liberdade para escolher
+            o momento certo de comprar.
+          </p>
+        </div>
+        <div class="split-illustration" aria-hidden="true">
+          <picture>
+            <source srcset="assets/casa_1.png" type="image/png" />
+            <img src="assets/promo_casa.png" alt="Imóvel" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulador (envio para WhatsApp) -->
+  <section id="sobre" class="about section">
+    <div class="overlay-box">
+      <button class="overlay-close" data-overlay-close aria-label="Fechar">×</button>
+      <h2>Simule sua parcela</h2>
+      <p class="simulador-subtitle">
+        Preencha os dados e clique em Simular — abriremos o WhatsApp da R&S com sua
+        solicitação e nossa equipe retornará o contato.
+      </p>
+
+      <form class="sim-form" onsubmit="event.preventDefault();">
+        <div class="sim-grid">
+          <div class="sim-field">
+            <label for="tipo">Tipo</label>
+            <div class="select-field">
+              <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+              <select id="tipo" aria-label="Tipo de bem">
+                <option value="veiculo" selected>Veículo</option>
+                <option value="imovel">Imóvel</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="sim-field">
+            <label for="valor">Valor da carta (R$)</label>
+            <input id="valor" type="text" inputmode="numeric" autocomplete="off" placeholder="R$ 120.000,00"
+              value="R$ 120.000,00" required />
+          </div>
+
+          <div class="sim-field">
+            <label for="prazo">Prazo (meses)</label>
+            <input id="prazo" type="number" min="12" step="1" value="60" required />
+          </div>
+
+          <div class="sim-field">
+            <label for="nome">Seu nome <small>(opcional)</small></label>
+            <input id="nome" type="text" placeholder="Seu nome" />
+          </div>
+        </div>
+
+        <div class="sim-actions">
+          <button class="btn btn-primary" id="btn-simular" type="button">
+            <i class="fa-brands fa-whatsapp"></i> Simular pelo WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact">
+    <h2>Fale conosco</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-subtitle">Entre em contato e tire suas dúvidas:</p>
+        <p><i class="fa-brands fa-whatsapp"></i> (61) 98664-4528</p>
+        <p><i class="fa-solid fa-envelope"></i> rsintermediacoesltda@gmail.com</p>
+        <p><i class="fa-brands fa-instagram"></i> @rs._intermediacoes</p>
+
+        <!-- Clientes (depoimentos) -->
+        <div class="testimonials" aria-label="Nossos clientes">
+          <div class="testimonial-card">
+            <div class="testimonial-items">
+              <blockquote class="active">
+                <p>Consegui planejar a compra do meu carro sem surpresas. Atendimento excelente!</p>
+                <footer><strong>Mariana S.</strong> — Goiânia/GO</footer>
+              </blockquote>
+              <blockquote>
+                <p>Muito esclarecedores em todas as etapas. Hoje estou com meu apartamento!</p>
+                <footer><strong>Rafael C.</strong> — Brasília/DF</footer>
+              </blockquote>
+              <blockquote>
+                <p>Transparência e acompanhamento de perto. Recomendo para quem quer segurança.</p>
+                <footer><strong>Ana Paula</strong> — Águas Claras/DF</footer>
+              </blockquote>
+            </div>
+            <div class="testimonial-dots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="rs-form" onsubmit="event.preventDefault(); enviarEmail();">
+          <label for="nomeContato">Nome</label>
+          <input type="text" id="nomeContato" placeholder="Seu nome" required />
+
+          <label for="telefone">Telefone para contato</label>
+          <input type="text" id="telefone" placeholder="(61) 9 0000-0000" required />
+
+          <label for="emailCliente">Seu E-mail <small>(opcional)</small></label>
+          <input type="email" id="emailCliente" placeholder="seu@email.com" />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-regular fa-paper-plane"></i> Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2025 R&S Intermediações. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+  <!-- WhatsApp Flutuante -->
+  <a id="wpp-fab" class="wpp-fab" href="https://wa.me/5561986644528" target="_blank" rel="noopener"
+    aria-label="Fale conosco pelo WhatsApp">
+    <span class="wpp-hint">Fale conosco</span>
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+</body>
+
+</html>
